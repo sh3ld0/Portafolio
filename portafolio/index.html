@@ -19,13 +19,15 @@
                 </ul>
             </div>
         </nav>
-
         <section id="acerca">
+            <video autoplay muted loop id="video-fondo">
+                <source src="Videos/Fuego.mp4" type="video/mp4">
+            </video>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <h2 class="text-center">Acerca de mí</h2>
-                        <p class="text-center text">
+                        <h2 class="text-center"><strong> Acerca de mí </strong></h2>
+                        <p id="primerP" class="text-center text">
                             ¡Hola! Soy un joven entusiasta de 19 años, actualmente en mi segundo año de la carrera de Ciencias de la Computación.
                             Estoy continuamente aprendiendo y buscando mejorar mis habilidades.
                             Aunque estudiar estos temas puede ser un desafío, la satisfacción de resolver problemas complejos y crear proyectos funcionales me motiva a seguir adelante.
@@ -37,7 +39,7 @@
 
         <section id="preferencias">
             <div class="container">
-                <h2 class="text-primary">Proficiency</h2>
+                <h2>Preferencias</h2>
                 <div class="my-4">
                   <h5>Frontend</h5>
                   <div class="progress">
@@ -60,33 +62,70 @@
         </section>
 
         <section id="habilidades">
-            <h2 class="text-center">Habilidades</h2>
+            <h2 class="text-center"><strong>Habilidades</strong></h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/C++.png" alt="C++" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/C++.png" alt="C++" class="img-fluid habilidad fade-in">
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/PYTHON.png" alt="Python" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/PYTHON.png" alt="Python" class="img-fluid habilidad fade-in">
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/PHP.png" alt="PHP" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/PHP.png" alt="PHP" class="img-fluid habilidad fade-in">
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/JS.png" alt="JavaScript" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/JS.png" alt="JavaScript" class="img-fluid habilidad fade-in">
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/CSS.png" alt="CSS" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/CSS.png" alt="CSS" class="img-fluid habilidad fade-in">
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="IMG/HTML.png" alt="HTML" class="img-fluid habilidad-img fade-in">
+                    <img src="IMG/HTML.png" alt="HTML" class="img-fluid habilidad fade-in">
                 </div>
             </div>
         </section>
-          
+
+        <section id="portafolio">
+            <div class="container">
+                <h2 class="text-center"><strong>Portafolio</strong></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="IMG/formulario.png" class="card-img-top" alt="formulario">
+                            <div class="card-body">
+                                <h5 class="card-title">Formulario</h5>
+                                <a href="https://github.com/sh3ld0/Portafolio/blob/main/form/index.html" class="btn btn-primary" target="_blank">Ver código</a>
+                                <a href="https://github.com/sh3ld0/Portafolio/tree/main/form" class="btn btn-secondary" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="IMG/3Raya.png" class="card-img-top" alt="3Raya">
+                            <div class="card-body">
+                                <h5 class="card-title">3 en raya Basico</h5>
+                                <a href="https://sh3ld0.github.io/Portafolio/" class="btn btn-primary" target="_blank">Ver código</a>
+                                <a href="enlace_a_pagina_proyecto2" class="btn btn-secondary" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="IMG/portafolio.png" class="card-img-top" alt="Portafolio">
+                            <div class="card-body">
+                                <h5 class="card-title">Portafolio Basico</h5>
+                                <a href="https://github.com/sh3ld0/Portafolio/blob/main/portafolio/index.html" class="btn btn-primary" target="_blank">Ver código</a>
+                                <a href="https://github.com/sh3ld0/Portafolio/tree/main/portafolio" class="btn btn-secondary" target="_blank">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="contactame">
             <div class="container">
-                <h2 class="text-center">Contáctame</h2>
+                <h2 class="text-center"><strong>Contáctame</strong></h2>
                 <form>
                     <div class="form-group">
                         <label for="name">Nombre</label>

@@ -1,23 +1,23 @@
-document.addEventListener('DOMContentLoaded', function()
+let images = document.querySelectorAll('.fade-in');
+
+function toggleVisibility(image)
 {
-    const images = document.querySelectorAll('.fade-in');
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    };
+    let rect = image.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0)
+    {
+        image.classList.add('visible');
+    }
+    else
+    {
+        image.classList.remove('visible');
+    }
+}
+function checkVisibility()
+{
+    images.forEach(toggleVisibility);
+}
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } else {
-                entry.target.classList.remove('visible');
-            }
-        });
-    }, observerOptions);
+window.addEventListener('scroll', checkVisibility);
 
-    images.forEach(image => {
-        observer.observe(image);
-    });
-});
+
+window.addEventListener('resize', checkVisibility);
