@@ -1,23 +1,21 @@
-let images = document.querySelectorAll('.fade-in');
+let imagenes = document.querySelectorAll('.barrido');
 
-function toggleVisibility(image)
+function imagenVisible(imagen)
 {
-    let rect = image.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0)
+    let borde = imagen.getBoundingClientRect();
+    if (borde.top < window.innerHeight && borde.bottom > 0)
     {
-        image.classList.add('visible');
+        imagen.classList.add('visible');
     }
     else
     {
-        image.classList.remove('visible');
+        imagen.classList.remove('visible');
     }
 }
-function checkVisibility()
+function estaVisible()
 {
-    images.forEach(toggleVisibility);
+    imagenes.forEach(imagenVisible);
 }
 
-window.addEventListener('scroll', checkVisibility);
-
-
-window.addEventListener('resize', checkVisibility);
+window.addEventListener('scroll', estaVisible);
+window.addEventListener('resize', estaVisible);
