@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Formulario</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h2 id="title">Laboratorio<br>JavaScript</h2>
+                    <div class="form-group">
+                        <label for="primerNombre">Primer Nombre</label>
+                        <input type="text" class="form-control" id="primerNombre" >
+                    </div>
+                    <div class="form-group">
+                        <label for="segundoNombre">Segundo Nombre</label>
+                        <input type="text" class="form-control" id="segundoNombre" >
+                    </div>
+                    <div class="form-group">
+                        <label for="primerApellido">Primer Apellido</label>
+                        <input type="text" class="form-control" id="primerApellido" >
+                    </div>
+                    <div class="form-group">
+                        <label for="segundoApellido">Segundo Apellido</label>
+                        <input type="text" class="form-control" id="segundoApellido" >
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="int" class="form-control" id="dni" length="8" >
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" >
+                    </div>
+                    <br>
+                    <button class="btn btn-process btn-block" onclick="procesar()">Procesar</button>
+                    
+                    <div class="result-container">
+                        <div class="form-group">
+                            <label for="nombreCompleto">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreCompleto" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="ultimoDigitoDni">Ultimo Digito del DNI</label>
+                            <input type="number" class="form-control" id="ultimoDigitoDni" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="edad">Edad</label>
+                            <input type="number" class="form-control" id="edad" readonly>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

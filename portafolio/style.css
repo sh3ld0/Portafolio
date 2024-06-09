@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#acerca {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.text {
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+h2 {
+    padding: 100px;
+}
+
+#preferencias {
+    padding-top: 50px;
+    margin-bottom: 75px;
+}
+.progress-bar {
+    background-color: #6610f2 !important;
+}
+.habilidad-img {
+    padding-left: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+  
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+
+#contactame {
+    margin-top: 225px;
+    padding-bottom: 50px;
+}
