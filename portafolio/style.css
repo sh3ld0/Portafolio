@@ -27,7 +27,7 @@ h2 {
     padding: 100px;
     color: #6610f2;
     view-timeline-name: --image;
-    view-timeline-axis: lock;
+    view-timeline-axis: block;
     animation-timeline: --image;
     animation-name: show;
     animation-range: entry 0% cover 30%;
