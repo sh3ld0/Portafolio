@@ -30,7 +30,7 @@ h2 {
     view-timeline-axis: block;
     animation-timeline: --image;
     animation-name: show;
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 65%;
     animation-fill-mode: both;
 }
 
